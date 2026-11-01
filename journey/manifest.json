@@ -1,0 +1,470 @@
+{
+  "fps": 60,
+  "tiers": {
+    "hd": {
+      "w": 1600,
+      "h": 900,
+      "crf": 20
+    },
+    "md": {
+      "w": 1280,
+      "h": 720,
+      "crf": 21
+    }
+  },
+  "journeys": {
+    "j1": {
+      "from": "K1b",
+      "to": "K2",
+      "segs": [
+        "V2"
+      ],
+      "frames": 76,
+      "fps": 60,
+      "duration": 1.25,
+      "crf": {
+        "hd": 20,
+        "md": 21
+      },
+      "sizes": {
+        "hd": {
+          "fwd": 4206896,
+          "rev": 4146737
+        },
+        "md": {
+          "fwd": 2801465,
+          "rev": 2737074
+        }
+      },
+      "check": {
+        "endpoints": [
+          {
+            "file": "hd/j1.mp4",
+            "first": 0.89,
+            "last": 1.36
+          },
+          {
+            "file": "hd/j1-rev.mp4",
+            "first": 0.96,
+            "last": 1.25
+          },
+          {
+            "file": "md/j1.mp4",
+            "first": 1.32,
+            "last": 1.94
+          },
+          {
+            "file": "md/j1-rev.mp4",
+            "first": 1.41,
+            "last": 1.79
+          }
+        ],
+        "psnr": {
+          "avg": 37.26,
+          "min": 34.15,
+          "samples": [
+            [
+              19,
+              37.77
+            ],
+            [
+              38,
+              39.86
+            ],
+            [
+              56,
+              36.4
+            ]
+          ]
+        },
+        "psnrY": {
+          "avg": 38.5,
+          "min": 35.25,
+          "samples": [
+            [
+              19,
+              39.18
+            ],
+            [
+              38,
+              41.56
+            ],
+            [
+              56,
+              37.2
+            ]
+          ]
+        },
+        "rhythm": {
+          "pxPerFrame": 39.13,
+          "drift": 23.7,
+          "jitterP95": 18.4,
+          "jitterMax": 23.2
+        }
+      }
+    },
+    "j2": {
+      "from": "K2",
+      "to": "K3",
+      "segs": [
+        "V3a",
+        "V3b"
+      ],
+      "frames": 91,
+      "fps": 60,
+      "duration": 1.5,
+      "crf": {
+        "hd": 20,
+        "md": 21
+      },
+      "sizes": {
+        "hd": {
+          "fwd": 8348148,
+          "rev": 8364994
+        },
+        "md": {
+          "fwd": 5487794,
+          "rev": 5473597
+        }
+      },
+      "check": {
+        "endpoints": [
+          {
+            "file": "hd/j2.mp4",
+            "first": 0.96,
+            "last": 1.28
+          },
+          {
+            "file": "hd/j2-rev.mp4",
+            "first": 0.9,
+            "last": 1.36
+          },
+          {
+            "file": "md/j2.mp4",
+            "first": 1.41,
+            "last": 1.82
+          },
+          {
+            "file": "md/j2-rev.mp4",
+            "first": 1.32,
+            "last": 1.94
+          }
+        ],
+        "psnr": {
+          "avg": 33.29,
+          "min": 31.85,
+          "samples": [
+            [
+              23,
+              32.03
+            ],
+            [
+              45,
+              32.34
+            ],
+            [
+              68,
+              34.4
+            ]
+          ]
+        },
+        "psnrY": {
+          "avg": 33.98,
+          "min": 32.28,
+          "samples": [
+            [
+              23,
+              32.57
+            ],
+            [
+              45,
+              32.82
+            ],
+            [
+              68,
+              35.25
+            ]
+          ]
+        },
+        "rhythm": {
+          "pxPerFrame": 33.62,
+          "drift": 140,
+          "jitterP95": 26,
+          "jitterMax": 138.1
+        }
+      }
+    },
+    "j3": {
+      "from": "K3",
+      "to": "K4",
+      "segs": [
+        "V4a",
+        "V4b"
+      ],
+      "frames": 91,
+      "fps": 60,
+      "duration": 1.5,
+      "crf": {
+        "hd": 20,
+        "md": 21
+      },
+      "sizes": {
+        "hd": {
+          "fwd": 6329494,
+          "rev": 6404958
+        },
+        "md": {
+          "fwd": 4111993,
+          "rev": 4161223
+        }
+      },
+      "check": {
+        "endpoints": [
+          {
+            "file": "hd/j3.mp4",
+            "first": 0.9,
+            "last": 1.23
+          },
+          {
+            "file": "hd/j3-rev.mp4",
+            "first": 0.86,
+            "last": 1.28
+          },
+          {
+            "file": "md/j3.mp4",
+            "first": 1.33,
+            "last": 1.71
+          },
+          {
+            "file": "md/j3-rev.mp4",
+            "first": 1.17,
+            "last": 1.82
+          }
+        ],
+        "psnr": {
+          "avg": 35.36,
+          "min": 33.6,
+          "samples": [
+            [
+              23,
+              36.16
+            ],
+            [
+              45,
+              34.36
+            ],
+            [
+              68,
+              35.7
+            ]
+          ]
+        },
+        "psnrY": {
+          "avg": 36.08,
+          "min": 34.14,
+          "samples": [
+            [
+              23,
+              36.83
+            ],
+            [
+              45,
+              35.11
+            ],
+            [
+              68,
+              36.48
+            ]
+          ]
+        },
+        "rhythm": {
+          "pxPerFrame": 30.78,
+          "drift": 18.5,
+          "jitterP95": 18.5,
+          "jitterMax": 23.5
+        }
+      }
+    },
+    "j4": {
+      "from": "K4",
+      "to": "K4b",
+      "segs": [
+        "V5"
+      ],
+      "frames": 91,
+      "fps": 60,
+      "duration": 1.5,
+      "crf": {
+        "hd": 20,
+        "md": 21
+      },
+      "sizes": {
+        "hd": {
+          "fwd": 5423282,
+          "rev": 5445103
+        },
+        "md": {
+          "fwd": 3528790,
+          "rev": 3542232
+        }
+      },
+      "check": {
+        "endpoints": [
+          {
+            "file": "hd/j4.mp4",
+            "first": 0.86,
+            "last": 1.27
+          },
+          {
+            "file": "hd/j4-rev.mp4",
+            "first": 0.88,
+            "last": 1.23
+          },
+          {
+            "file": "md/j4.mp4",
+            "first": 1.17,
+            "last": 1.79
+          },
+          {
+            "file": "md/j4-rev.mp4",
+            "first": 1.24,
+            "last": 1.71
+          }
+        ],
+        "psnr": {
+          "avg": 36.18,
+          "min": 35.34,
+          "samples": [
+            [
+              23,
+              36
+            ],
+            [
+              45,
+              35.83
+            ],
+            [
+              68,
+              36.86
+            ]
+          ]
+        },
+        "psnrY": {
+          "avg": 37.04,
+          "min": 36.19,
+          "samples": [
+            [
+              23,
+              36.72
+            ],
+            [
+              45,
+              36.77
+            ],
+            [
+              68,
+              37.94
+            ]
+          ]
+        },
+        "rhythm": {
+          "pxPerFrame": 23.31,
+          "drift": 12.8,
+          "jitterP95": 15.4,
+          "jitterMax": 25.1
+        }
+      }
+    },
+    "j5": {
+      "from": "K4b",
+      "to": "K5",
+      "segs": [
+        "V6a",
+        "V6b"
+      ],
+      "frames": 76,
+      "fps": 60,
+      "duration": 1.25,
+      "crf": {
+        "hd": 20,
+        "md": 21
+      },
+      "sizes": {
+        "hd": {
+          "fwd": 5304464,
+          "rev": 5388950
+        },
+        "md": {
+          "fwd": 3462470,
+          "rev": 3516311
+        }
+      },
+      "check": {
+        "endpoints": [
+          {
+            "file": "hd/j5.mp4",
+            "first": 0.89,
+            "last": 1.33
+          },
+          {
+            "file": "hd/j5-rev.mp4",
+            "first": 0.92,
+            "last": 1.28
+          },
+          {
+            "file": "md/j5.mp4",
+            "first": 1.25,
+            "last": 1.89
+          },
+          {
+            "file": "md/j5-rev.mp4",
+            "first": 1.35,
+            "last": 1.79
+          }
+        ],
+        "psnr": {
+          "avg": 36.17,
+          "min": 33.61,
+          "samples": [
+            [
+              19,
+              36.81
+            ],
+            [
+              38,
+              37.82
+            ],
+            [
+              56,
+              33.61
+            ]
+          ]
+        },
+        "psnrY": {
+          "avg": 37,
+          "min": 34.12,
+          "samples": [
+            [
+              19,
+              37.62
+            ],
+            [
+              38,
+              38.92
+            ],
+            [
+              56,
+              34.12
+            ]
+          ]
+        },
+        "rhythm": {
+          "pxPerFrame": 22.76,
+          "drift": 72.5,
+          "jitterP95": 69,
+          "jitterMax": 81.8
+        }
+      }
+    }
+  }
+}
