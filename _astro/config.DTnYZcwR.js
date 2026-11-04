@@ -1,0 +1,1 @@
+var e={dprCap:1,flowDiv:6,paperUrl:`/paper/cold-press.png`,paperTile:512,grain:1.35,edge:[.06,.09,.42,150],mark:[1,1,.17,.2],decayVel:.905,decayInk:.99,radius:[.02,.042],fullSpeed:900,ink:.45,warp:1,idleAfter:3.5,calmMoving:.3,calmDelay:.4,paintInAlbum:.35,bloomRadius:120,bloomGrow:2.6,bloomFade:.6};export{e as t};
