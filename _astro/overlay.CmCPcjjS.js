@@ -1,4 +1,4 @@
-import{J as e,M as t,S as n,V as r,X as i,Y as a,at as o,et as s,f as c,it as l,k as u,l as d,n as f,ot as p,p as m,q as h,rt as g,st as _,tt as v}from"./three.module.kGeHQt35.js";import{_ as y,h as b,x}from"./album.DJ6X_OtZ.js";import{t as S}from"./config.DTnYZcwR.js";import{t as C}from"./noise.BiYsHKpx.js";var w=`// 全屏平面：PlaneGeometry(2, 2) 的顶点已经在裁剪空间里，不需要相机矩阵
+import{J as e,M as t,S as n,V as r,X as i,Y as a,at as o,et as s,f as c,it as l,k as u,l as d,n as f,ot as p,p as m,q as h,rt as g,st as _,tt as v}from"./three.module.kGeHQt35.js";import{_ as y,h as b,x}from"./album.DRJmf5D4.js";import{t as S}from"./config.DTnYZcwR.js";import{t as C}from"./noise.BiYsHKpx.js";var w=`// 全屏平面：PlaneGeometry(2, 2) 的顶点已经在裁剪空间里，不需要相机矩阵
 varying vec2 vUv;
 
 void main() {
