@@ -1,4 +1,4 @@
-import{J as e,M as t,S as n,V as r,X as i,Y as a,at as o,et as s,f as c,it as l,k as u,l as d,n as f,ot as p,p as m,q as h,rt as g,st as _,tt as v}from"./three.module.kGeHQt35.js";import{h as y,m as b,n as x,p as S}from"./BaseLayout.astro_astro_type_script_index_0_lang.CrNUfdAN.js";import{t as C}from"./noise.BiYsHKpx.js";var w=`// 全屏平面：PlaneGeometry(2, 2) 的顶点已经在裁剪空间里，不需要相机矩阵
+import{J as e,M as t,S as n,V as r,X as i,Y as a,at as o,et as s,f as c,it as l,k as u,l as d,n as f,ot as p,p as m,q as h,rt as g,st as _,tt as v}from"./three.module.kGeHQt35.js";import{h as y,m as b,n as x,p as S}from"./BaseLayout.astro_astro_type_script_index_0_lang.BemZrfGf.js";import{t as C}from"./noise.BiYsHKpx.js";var w=`// 全屏平面：PlaneGeometry(2, 2) 的顶点已经在裁剪空间里，不需要相机矩阵
 varying vec2 vUv;
 
 void main() {
@@ -242,13 +242,12 @@ void main() {
     m *= smoothstep(0.55, 1.0, cl);
   }
 
-  // 极淡暗角（原 body::after）
-  vec2 vq = (vec2(vUv.x, 1.0 - vUv.y) - vec2(0.5, 0.45)) / vec2(1.2, 0.9);
-  float vig = clamp((length(vq) - 0.62) / 0.38, 0.0, 1.0);
+  // 11-22 减弱纸纹：暗角去掉（B 通道恒为 0，paper.frag 和 CSS 烘焙图都不再压暗四周）
+  float vig = 0.0;
 
-  // 纸纹：冷压纸牙口 + 低频斑驳
+  // 纸纹：冷压纸牙口 + 低频斑驳（斑驳 0.045 → 0.013，和 grain 一样降到约 28 %）
   float cockle = vnoise(px / 380.0) * 0.6 + vnoise(px / 150.0 + 7.0) * 0.4;
-  float mult = 1.0 + g * uGrain + (cockle - 0.5) * 0.045;
+  float mult = 1.0 + g * uGrain + (cockle - 0.5) * 0.013;
 
   gl_FragColor = vec4(m, clamp((mult - 0.7) / 0.6, 0.0, 1.0), vig, clamp(g + 0.5, 0.0, 1.0));
 }
