@@ -1,4 +1,4 @@
-import{f as e,g as t,n,p as r,t as i}from"./BaseLayout.astro_astro_type_script_index_0_lang.D-Wvwwfk.js";var a=`#version 300 es
+import{f as e,g as t,n,p as r,t as i}from"./BaseLayout.astro_astro_type_script_index_0_lang.DvGw-2ng.js";var a=`#version 300 es
 // 第 Ⅴ 章「彩窗」6f：一扇大玫瑰窗，滚一下转一圈换一件。一遍全屏：
 // 夜里的石墙（不规则的方石、风化、水渍，被窗透出的彩光照亮、远处暗）、不转的石头外框（内侧斜面 + 外圈圆线脚 + N 颗小宝石）、
 // 会转的玻璃圆盘（scripts/stained-glass.py 的 sg-disc：颜色 / 距离 / 厚薄 / 种类 / 焊点；画心是作品，外圈是石窗棂和花瓣）、
